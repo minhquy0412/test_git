@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HideShow</title>
+    <style>
+        .box, .button{
+            display: flex;
+            max-width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .box1, .box2, .box3{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .btn{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">    
+        <div id="image1" class="box1" >
+            <img src="https://lh3.googleusercontent.com/z5vvamGMwczpSEuBlG91aKA8H-V0pDLZXyL97_w5JSjxj6jLPoQ08tJnszqwkUyiqsU" alt="">                       
+        </div>    
+            
+        <div id="image2" class="box2" >
+            <img src="https://lh3.googleusercontent.com/z5vvamGMwczpSEuBlG91aKA8H-V0pDLZXyL97_w5JSjxj6jLPoQ08tJnszqwkUyiqsU" alt="">
+        </div>
+       
+        <div id="image3" class="box3" >
+            <img src="https://lh3.googleusercontent.com/z5vvamGMwczpSEuBlG91aKA8H-V0pDLZXyL97_w5JSjxj6jLPoQ08tJnszqwkUyiqsU" alt="">
+        </div>
+    </div>
+
+    <div class="button">
+        <div class="btn">
+            <input type="button" id="bt1-1" value="Ẩn">
+            <input type="button" id="bt1-2" value="Hiện">
+        </div>
+
+        <div class="btn">
+            <input type="button" id="bt2-1" value="Ẩn">
+            <input type="button" id="bt2-2" value="Hiện">
+        </div>
+
+        <div class="btn">
+            <input type="button" id="bt3-1" value="Ẩn">
+            <input type="button" id="bt3-2" value="Hiện">
+        </div>
+    </div>
+        
+    <script language="javascript">
+ 
+        document.getElementById("bt1-1").onclick = function () {
+            document.getElementById("image1").style.display = 'none';
+        };
+        document.getElementById("bt1-2").onclick = function () {
+            document.getElementById("image1").style.display = 'block';
+        };
+
+        document.getElementById("bt2-1").onclick = function () {
+            document.getElementById("image2").style.display = 'none';
+        };
+        document.getElementById("bt2-2").onclick = function () {
+            document.getElementById("image2").style.display = 'block';
+        };
+
+        document.getElementById("bt3-1").onclick = function () {
+            document.getElementById("image3").style.display = 'none';
+        };
+        document.getElementById("bt3-2").onclick = function () {
+            document.getElementById("image3").style.display = 'block';
+        };
+
+    </script>
+ 
+</body>
+
+</html>
